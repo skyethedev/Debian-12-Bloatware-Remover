@@ -167,6 +167,7 @@ echo
 	sudo dpkg -r --force-depends uno-libs-private
 	sudo dpkg -r --force-depends ure
 echo "--- NUKED LIBRE OFFICE ---"
+echo "--- Note: There may be reminents of Libre Office remaining, nuke the rest manually pretty pls ---"
 	echo
 	sudo dpkg -r --force-depends librhythmbox-core10
 	sudo dpkg -r --force-depends rhythmbox-data
