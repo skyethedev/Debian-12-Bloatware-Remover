@@ -38,7 +38,7 @@ echo "--- BULLSHIT ACCESSORIES REMOVED ---"
 	sudo apt-get remove gnome-sound-recorder -y
 echo "--- JUNK AUDIO AND CAMERA REMOVED ---"
 echo
-
+	sudo dpkg -r --force-depends libreoffice-help-en-us
 	sudo dpkg -r --force-depends fonts-opensymbol
 	sudo dpkg -r --force-depends libreoffice-base-core
 	sudo dpkg -r --force-depends libreoffice-calc
@@ -167,8 +167,7 @@ echo
 	sudo dpkg -r --force-depends uno-libs-private
 	sudo dpkg -r --force-depends ure
 echo "--- NUKED LIBRE OFFICE ---"
-echo "--- Note: There may be reminents of Libre Office remaining, nuke the rest manually pretty pls ---"
-	echo
+echo
 	sudo dpkg -r --force-depends librhythmbox-core10
 	sudo dpkg -r --force-depends rhythmbox-data
 	sudo dpkg -r --force-depends rhythmbox-plugin-cdrecorder
@@ -176,3 +175,5 @@ echo "--- Note: There may be reminents of Libre Office remaining, nuke the rest 
 	sudo dpkg -r --force-depends rhythmbox
 	sudo dpkg -r --force-depends gir1.2-rb-3.0
 echo "--- Consider rythmbox gone ---"
+	sudo apt autoremove -y
+echo "--- Bloatware removed ---"
